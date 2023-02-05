@@ -5,7 +5,7 @@ email: usamaazad2@gmail.com
 
 description: A command-line tool which auto generates asset directories and register them in pubspec.yaml
 
-version: 0.0.1
+version: 0.0.2
 
 homepage: https://github.com/Usama-Azad/flutter_asset_manager
 repository: https://github.com/Usama-Azad/flutter_asset_manager
