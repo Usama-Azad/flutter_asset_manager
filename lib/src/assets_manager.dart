@@ -52,11 +52,11 @@ class AssetManager {
   void createAssetsDirectories() {
     if (assetsDirs == null) return;
 
-    final assetsDirPath = '$cwdPath\\assets';
+    final assetsDirPath = '$cwdPath/assets';
     Directory(assetsDirPath).createSync();
 
     for (final dir in assetsDirs!) {
-      final myDir = Directory('$assetsDirPath\\$dir');
+      final myDir = Directory('$assetsDirPath/$dir');
       if (myDir.existsSync()) {
         Logger.log('* Directory: "${myDir.path}" already exists.',
             colorCode: ColorCode.blue);
@@ -75,7 +75,7 @@ class AssetManager {
     Logger.log('Registering assets directories in "pubspec.yaml"',
         colorCode: ColorCode.magenta);
 
-    final pubFile = File('$cwdPath\\pubspec.yaml');
+    final pubFile = File('$cwdPath/pubspec.yaml');
     if (!pubFile.existsSync()) pubFile.createSync();
 
     final newPubLines = [];
